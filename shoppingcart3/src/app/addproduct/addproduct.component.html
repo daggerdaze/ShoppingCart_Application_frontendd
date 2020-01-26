@@ -1,0 +1,47 @@
+<div class="container bg-light mt-5" style="width: 50%"><hr>
+  <div class="mr-5 text-warning" ><b style="font-size:30px"><i>Add Your Product</i></b></div>
+  <form ><hr>
+    <div class="form-group">
+      <label for="name"> Product Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" [(ngModel)]="name" >
+    </div><hr>
+    <div class="form-group">
+      <label for="brand">Brand:</label>
+      <input type="text" class="form-control" id="brand" placeholder="Enter brand" name="email" [(ngModel)]="brand">
+    </div><hr>
+    <div class="form-group">
+      <label for="cat">Category:</label>
+      <input type="text" class="form-control" id="cat" placeholder="Enter category" name="pswd" [(ngModel)]="category">
+    </div><hr>
+    <div class="form-group">
+      <label for="desc">Description:</label>
+      <input type="text" class="form-control" id="desc" placeholder="Enter desc" name="desc" [(ngModel)]="description">
+    </div><hr>
+    <div class="form-group">
+      <label for="code">Code:</label>
+      <input type="text" class="form-control" id="code" placeholder="Enter code" name="code" [(ngModel)]="code">
+    </div><hr>
+    <div class="form-group">
+      <label for="img">Image Source:</label>
+      <input type="text" class="form-control" id="img" placeholder="Enter url" name="img" [(ngModel)]="imgsrc">
+    </div><hr>
+    <div class="form-group">
+      <label for="quan">Quantity:</label>
+      <input type="text" class="form-control" id="quan" placeholder="Enter quan" name="quan" [(ngModel)]="quantity">
+    </div><hr>
+    <div class="form-group">
+      <label for="sid">SupplierId:</label>
+      <input type="text" class="form-control" id="sid" placeholder="Enter sid" name="sid" [(ngModel)]="supplierId">
+    </div><hr>
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <input type="text" class="form-control" id="price" placeholder="Enter price" name="price" [(ngModel)]="unitPrice">
+    </div><hr>
+    <div>
+      <button type="submit" class="btn btn-warning" (click)="addproduct()">Add Product</button>
+    </div><br>
+  </form>
+</div>
+<hr class="mt-3 w-75">
+<div class="size text-center text-muted"><i class="material-icons size">© copyright</i><span>&nbsp;2019, www.Looks Garments.com, Moga</span></div>
+<br>

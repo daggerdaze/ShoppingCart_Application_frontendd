@@ -1,0 +1,121 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-5 ">
+
+        <div class="row ml-1"  style="align-content:center; align-self: center">
+        <div class="bg-light col-9 container"  >
+          <div class="card " >
+            <i class="fas fa-user-circle text-center fa-10x mt-4"></i>
+            <div class="container text-center"><br>
+              <h3 id="id1">{{user.name}}</h3><br>
+
+              <p>{{user.role}}</p><hr></div>
+            <div class="container" >
+              <div class="form-group row">
+                <div class="offset-3 col-8" *ngIf="app.AdminLog()">
+                  <button name="submit" type="submit" class="btn btn-primary" routerLink="/addproduct" >Add Product</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="container text-center mb-2">
+              <a href="https://twitter.com/login"><i class="fab fa-twitter" style="color:dodgerblue;font-size:24px"></i></a>&nbsp;
+              <a href="https://soundcloud.com/"><i class="fab fa-soundcloud" style="color:orangered;font-size:24px"></i></a>&nbsp;
+              <a href="https://www.instagram.com/?hl=en"><i class='fab fa-instagram' style="color:red;font-size:24px"></i></a>
+            </div>
+          </div></div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Your Profile</h4>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <form>
+<!--                <div class="form-group row">-->
+<!--                  <label for="name" class="col-4 col-form-label">User Name*</label>-->
+<!--                  <div class="col-8">-->
+<!--                    <input id="name" name="name" value="{{user.name}}"  placeholder="Username" class="form-control here" [disabled]="disabled" [(ngModel)]="user.name" type="text">-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                <div class="form-group row">-->
+<!--                  <label for="select" class="col-4 col-form-label">Display Name public as</label>-->
+<!--                  <div class="col-8">-->
+<!--                    <select id="select" name="select" class="custom-select">-->
+<!--                      <option value="admin">Admin</option>-->
+<!--                    </select>-->
+<!--                  </div>-->
+<!--                </div>-->
+                <div class="form-group row">
+                  <label for="email" class="col-4 col-form-label">Email*</label>
+                  <div class="col-8">
+                    <input id="email" name="email" value="{{user.email}}" placeholder="Email" class="form-control here"  type="text"[disabled]="disabled" [ngModel]="user.email">
+                  </div>
+                </div>
+<!--                <div class="form-group row">-->
+<!--                  <label for="website" class="col-4 col-form-label">Website</label>-->
+<!--                  <div class="col-8">-->
+<!--                    <input id="website" name="website" placeholder="website" class="form-control here" type="text" [disabled]="disabled">-->
+<!--                  </div>-->
+<!--                </div>-->
+                <div class="form-group row">
+                  <label for="address" class="col-4 col-form-label">Address</label>
+                  <div class="col-8">
+                    <textarea id="address" name="address" value="{{user.address}}" cols="40" rows="4" class="form-control" [disabled]="disabled" [ngModel]="user.address"></textarea>
+                  </div>
+                </div>
+<!--                <div class="form-group row">-->
+<!--                  <label for="newpass" class="col-4 col-form-label">New Password</label>-->
+<!--                  <div class="col-8">-->
+<!--                    <input id="newpass" name="newpass" value="{{user.password}}" placeholder="New Password" class="form-control here" type="text" [disabled]="disabled" [ngModel]="user.password">-->
+<!--                  </div>-->
+<!--                </div>-->
+                <div class="form-group row">
+                  <label for="mobile" class="col-4 col-form-label">Mobile</label>
+                  <div class="col-8">
+                    <input id="mobile" name="mobile" value="{{user.mobile}}" placeholder="Mobile No." class="form-control here" type="text" [disabled]="disabled" [ngModel]="user.mobile">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="gender" class="col-4 col-form-label">Gender</label>
+                  <div class="col-8">
+                    <input id="gender" name="gender" value="{{user.gender}}" placeholder="Gender" class="form-control here" type="text" [disabled]="disabled" [ngModel]="user.gender">
+                  </div>
+                </div>
+<!--                <div class="form-group row">-->
+<!--                  <label for="text" class="col-4 col-form-label"></label>-->
+<!--                  <div class="col-8">-->
+<!--                    <input id="text" name="text" placeholder="Nick Name" class="form-control here"  type="text" [disabled]="disabled">-->
+<!--                  </div>-->
+<!--                </div>-->
+                <div class="form-group row">
+                  <div class="offset-4 col-8">
+                    <button name="submit" type="submit" class="btn btn-primary" (click)="toggle()">Update My Profile</button>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="offset-4 col-8">
+                    <button name="submit" type="submit" class="btn btn-primary" (click)="save()">Save Changes</button>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="offset-4 col-8">
+                    <button name="submit" type="submit" class="btn btn-primary" routerLink="/orderhistory">Order History</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

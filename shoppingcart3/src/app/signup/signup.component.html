@@ -1,0 +1,84 @@
+<div class="wolf justify-content-center mt-5" style=" text-align:center">
+  <div class="wap wally rounded-circle" style=" display: inline-block;">
+    <a routerLink="/homepage"><img class="rounded-circle" src="./assets/3.png" alt="logo"  style="width:200px; height: 200px "></a>
+  </div>
+</div>
+<div class="container  wally mt-5" style="width: 50%; background-color:steelblue; "><hr>
+  <div class="mr-5 text-warning" ><b style="font-size:30px"><i>Create Your Account</i></b></div>
+  <form ><hr>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" [(ngModel)]="name" required="true">
+    </div><hr>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" [(ngModel)]="email" required="true">
+    </div><hr>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" [(ngModel)]="password" required="true">
+    </div><hr>
+    Gender:
+    <div class="form-group form-check" >
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio"  name="gender" value='Male' [(ngModel)]="gender">Male</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio"  name="gender" value='Female' [(ngModel)]="gender">Female</label>
+    </div><hr>
+    <div class="form-group" >
+    <label for="pwd">Address:</label>
+    <input type="text" class="form-control" placeholder="Enter address" name="address" [(ngModel)]="address" required="true">
+</div><hr>
+ <div class="form-group">
+<label for="pwd">Mobile:</label>
+<input type="text" class="form-control"  placeholder="Enter password" name="mobile" [(ngModel)]="mobile" required="true">
+</div><hr>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div><hr>
+    <div>
+      <button type="submit" class="btn btn-warning" (click)="userdata()">SignUp</button>
+    </div><span>
+      <span class="text-warning mn"  >Already a Customer?</span>&nbsp;&nbsp;
+      <a class="text-warning" routerLink="/login">Login Here</a></span>
+    <br>
+  </form>
+</div>
+<hr class="mt-3 w-75">
+<div class="size text-center text-muted"><i class="material-icons size">© copyright</i><span>&nbsp;2019, www.Looks Garments.com, All rights reserved.</span></div>
+<br>
+
+
+<!--<div class="one text-white h-100">-->
+<!--  <div class="text-center mx-auto py-3">-->
+<!--    <h1>BASIC LOGIN FORM</h1>-->
+<!--  </div>-->
+<!--  <div class="two w-50 mx-auto mb-5 pb-1">-->
+<!--    <div class=" text-center py-2 px-2">-->
+<!--      <button type="button" class="close text-white" data-dismiss="alert">&times;</button>-->
+<!--    </div>-->
+<!--    <div class="px-auto mt-5 mb-4 text-center">-->
+<!--      <h2>-->
+<!--        LOGIN-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--    <form id="form" (ngSubmit)="$event">-->
+<!--      <div class="w-75 bg-white mx-auto px-3 form-inline my-3 mb-3">-->
+<!--        <i class="material-icons text-dark pr-3">person</i>-->
+<!--        <input type="Username"  id="username" class="form-control border-0 w-75 "  placeholder="Username" name="Username">-->
+<!--      </div>-->
+<!--      <div class="w-75 bg-white mx-auto px-3 form-inline ">-->
+<!--        <i class="material-icons text-dark pr-3">vpn_key</i>-->
+<!--        <input type="password" id="password" class="form-control border-0 w-75 "placeholder="Password" name="Username">-->
+<!--      </div>-->
+
+<!--      <center><button type="submit" class="btn mt-4 text-white w-75 bg-primary" >LOGIN</button></center>-->
+<!--    </form>-->
+<!--    <div class="w-75 text-white mx-auto text-center mt-2 mb-5">-->
+<!--      Forgot Password?-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
